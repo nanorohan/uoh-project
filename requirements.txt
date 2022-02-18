@@ -3,4 +3,3 @@ scipy
 pandas
 streamlit
 pycaret
-pickle
