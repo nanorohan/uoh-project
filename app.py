@@ -44,7 +44,10 @@ previous_categorical_merge = dataframe_optimizer(pd.read_csv('previous_categoric
 filename = open('columns_train_data.pkl', 'rb')
 columns = pickle.load(filename)
 filename.close()
-tuned_model = load_model('model')
+#tuned_model = load_model('model')
+filename1 = open('model.pkl', 'rb')
+tuned_model = pickle.load(filename1)
+filename1.close()
 
 #Define a function to create a pipeline for prediction
 def inference(query):  
